@@ -4,14 +4,14 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.example.maven-project</groupId>
-  <artifactId>maven-project</artifactId>
+  <groupId>com.mayu24</groupId>
+  <artifactId>MavenHelloWorld</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Maven Project</name>
-  <description>Sample Maven project with a generated static site deployed to GitHub Pages</description>
-  <url>http://www.example.com</url>
+  <name>MavenHelloWorld</name>
+  <description>A simple Maven project deployed as a static site on GitHub Pages</description>
+  <url>https://mayu24.github.io/MavenHelloWorld/</url>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
@@ -21,28 +21,28 @@
 
   <build>
     <plugins>
-      <!-- Generates the project site -->
+      <!-- Generate Maven site -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.12.1</version>
       </plugin>
 
-      <!-- Adds Javadoc reports -->
+      <!-- Generate Javadoc -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.6.3</version>
       </plugin>
 
-      <!-- Adds unit test reports -->
+      <!-- Generate test reports -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>3.2.5</version>
       </plugin>
 
-      <!-- Adds Checkstyle reports -->
+      <!-- Add Checkstyle reports -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -62,7 +62,7 @@
   </reporting>
 
   <dependencies>
-    <!-- Example test dependency -->
+    <!-- Example dependency -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
