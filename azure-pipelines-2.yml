@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: Dcoker-Agent
+  name: Docker-Agent
 
 steps:
 - task: Maven@3
